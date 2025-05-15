@@ -1,61 +1,43 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Lemmiklooma Tervise ja Treeningu Jälgimise Rakendus
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Ülevaade
 
-## About Laravel
+Selle projekti eesmärk on luua veebirakendus, mis võimaldab kasutajatel jälgida oma lemmikloomade tervist, treeninguid ja üldist heaolu. Rakendus kombineerib lemmikloomade andmete haldamise, treeningute jälgimise ja terviseinfo salvestamise ühtsesse platvormil, pakkudes sarnast funktsionaalsust nagu Lemmikloomaregister ja LLR, kuid keskendudes rohkem tervise ja treeningu aspektidele.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Põhifunktsioonid
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+1. Lemmiklooma Profiili Haldamine: Rakendus võimaldab kasutajatel luua ja hallata lemmikloomade profiile, salvestades detailse info (nt nimi, tõug, vanus, pilt) MySQL andmebaasi.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+2. Treeningute ja Aktiivsuse Jälgimine: Kasutajad saavad registreerida ja jälgida lemmiklooma treeninguid, jalutuskäike ja muid aktiivsusi.
 
-## Learning Laravel
+3. Terviseandmete Salvestamine: Võimaldab salvestada ja jälgida olulisi terviseandmeid, nagu vaktsineerimised, ravimid ja veterinaarvisiidid.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+4. Otsing ja Filtreerimine: Kasutajad saavad otsida ja filtreerida andmebaasis konkreetseid loomi erinevate kriteeriumite alusel.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+5. CRUD Operatsioonid: Kasutajad saavad luua, lugeda, uuendada ja kustutada lemmiklooma informatsiooni.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+6. Omaniku Teavitused: Teavitab loomaomanikke olulistest sündmustest, muudatustest või meeldetuletustest.
 
-## Laravel Sponsors
+7. Seotud Andmed: Loob seoseid lemmikloomade, omanike, treeningute ja terviseandmete vahel.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Tehnoloogiad ja Vajalikud Oskused
 
-### Premium Partners
+- Backend: Node.js, Express.js
+- Framework: React.js
+- Andmebaas: MySQL
+- ORM: Sequelize
+- API: RESTful API
+- Autentimine: JWT
+- frontend: HTML, CSS, JavaScript
+- Versioonihaldus: Git ja GitHub
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development/)**
-- **[Active Logic](https://activelogic.com)**
+## Aja Hinnang
 
-## Contributing
+Töötan selle projekti kallal üksinda, mis sisaldab:
+- Projekti planeerimine: 20 tundi
+- Tagapõhja ja andmebaasi arendus: 70 tundi
+- Kasutajaliidese arendus: 50 tundi
+- Treeningute ja tervise jälgimise funktsionaalsuse integreerimine: 30 tundi
+- Testimine ja vigade parandamine: 10 tundi
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Kokku: 180 tundi
