@@ -16,9 +16,12 @@ const PetsList = () => {
     const fetchPets = async () => {
         try {
             const response = await axios.get('/pets');
-            setPets(response.data);
+            // Defensive: ensure pets is always an array
+            const petsData = Array.isArray(response.data) ? response.data : [];
+            setPets(petsData);
         } catch (error) {
             console.error('Error fetching pets:', error);
+            setPets([]); // fallback to empty array on error
         } finally {
             setLoading(false);
         }

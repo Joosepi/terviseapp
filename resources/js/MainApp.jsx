@@ -7,6 +7,7 @@ import Dashboard from './components/Dashboard';
 import PetsList from './components/PetsList';
 import PetProfile from './components/PetProfile';
 import { FaPaw, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
+import axios from 'axios';
 
 // Simple landing page
 function Landing() {
@@ -85,7 +86,13 @@ function MainApp() {
   // Simulate checking for a token (replace with real logic)
   useEffect(() => {
     const token = localStorage.getItem('token');
-    if (token) setUser({ name: 'Demo User' });
+    if (token) {
+      axios.get('/api/user', {
+        headers: { Authorization: `Bearer ${token}` }
+      })
+      .then(res => setUser(res.data))
+      .catch(() => setUser(null));
+    }
   }, []);
 
   const handleLogin = (userData) => {

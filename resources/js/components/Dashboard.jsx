@@ -23,9 +23,12 @@ const Dashboard = () => {
             ]);
             
             setStats(statsResponse.data);
-            setPets(petsResponse.data.slice(0, 3)); // Show only first 3 pets
+            // Defensive: ensure pets is always an array
+            const petsData = Array.isArray(petsResponse.data) ? petsResponse.data : [];
+            setPets(petsData.slice(0, 3)); // Show only first 3 pets
         } catch (error) {
             console.error('Error fetching dashboard data:', error);
+            setPets([]); // fallback to empty array on error
         } finally {
             setLoading(false);
         }
